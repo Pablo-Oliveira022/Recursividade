@@ -1,0 +1,87 @@
+#include <stdio.h>
+
+int rec(int x)
+{
+    if(x == 5)
+    {
+        return 1;
+    }
+    else
+    {
+        return recursiva(x - 5) + 4;
+    }
+}
+
+int main()
+{
+
+printf("Resultado = %d", rec(20));
+
+}
+
+_*Obs: Chamada da função em Main*_ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+int rec(int x)
+
+{
+    if(20 == 5)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return recursiva(20 - 5) + 4;
+    }
+}
+
+_*Obs: 2º Chamada da função*_ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+int rec(int x)
+
+{
+    if(15 == 5)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return recursiva(15 - 5) + 4;
+    }
+}
+
+_*Obs: 3º Chamada da função*_ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+int rec(int x)
+
+{
+    if(10 == 5)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return recursiva(10 - 5) + 4;
+    }
+}
+
+_*Obs: 3º Chamada da função*_ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+int rec(int x)
+
+{
+    if(5 == 5)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return recursiva(5 - 5) + 4;
+    }
+}
+
+_*Obs: Neste instante a função retorna 1 para a execução da ultima chamada da função, resolvendo as outras em cadeia e logo após finalizar retorna 13  à "Int main" e à mostra.
+
